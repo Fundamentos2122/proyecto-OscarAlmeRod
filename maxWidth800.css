@@ -1,0 +1,14 @@
+/*Con esto le estamos diciendo que de 0 a 800px va a aplicar estos estilos
+*/
+
+.section{
+    flex-direction: column;
+}
+.menu{
+    flex-direction: column;
+    height: auto;
+}
+.aside{
+    display: flex;
+    justify-content: center;
+}
