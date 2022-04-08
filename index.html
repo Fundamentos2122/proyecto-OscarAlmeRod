@@ -8,91 +8,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link  href="/Ejercicio4/estilo.css" rel = "stylesheet">
-    <link media="only screen and (max-width: 800px)" href="/Ejercicio4/maxWidth800.css" rel="stylesheet" >
-    <link media="only screen and (max-width: 600px)" href="/Ejercicio4/maxWidth600.css" rel="stylesheet" >
-    <link media="only screen and (max-width: 600px)" href="/Ejercicio4/maxWidth400.css" rel="stylesheet" >
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b69803b7ea.js" crossorigin="anonymous"></script>
+    <!--Estilos-->
+    <link  href="estilo.css" rel = "stylesheet">
+    <link media="only screen and (max-width: 800px)" href="maxWidth800.css" rel="stylesheet" >
+    <link media="only screen and (max-width: 600px)" href="maxWidth600.css" rel="stylesheet" >
+    <link media="only screen and (max-width: 600px)" href="maxWidth400.css" rel="stylesheet" >
+    <title>The Kiwi Cartoons</title>
 </head>
 
 <body>
     <div class="padre">
-        <!------------------------------------------------------->
+        <!-----------------------------------------------CABECER-------------------------------------------------------->
         <header class="header">
-            
             <div class="menu margen-interno">
+                <!----------------------NOMBRE DE LA EMPRESA---------------------->
                 <div class="logo">
-                    <a href="index.html">LogoCorporativo</a>
+                    <a href="index.html">The Kiwi Cartoons</a>
                 </div>
+                <!----------------------MENU----------------------------->
                 <nav class="nav">
-                    <a href=""><i class="fa-solid fa-house"></i></a>
-                    <a href="">Nosotros</a>
-                    <a href="">Servicios</a>
-                    <a href="">Noticias</a>
-                    <a href="">Contactos</a>
+                    <a href="/Bobblehead/galeria_bobblehead.html.html">Bobbleheads</a>
+                    <a href="/Cartoons/cartoons.html">Cartoons</a>
+                    <a href="/Pasteles/pasteles.html">Pasteles</a>
+                    <a href="/">Nuestra empresa</a>
+                    <a href="/Login/login.html">Entrar</a>
                 </nav>
                 <div class="social">
-                    <div><a href = "">
-                        <img src = "facebook2.png"> 
-                    </a></div>
-                    <div><a href = "">
-                        <img src = "carts.png"> 
-                    </a></div>
+                    <!-----------------ICONO DE FACEBOOK---------------------------->
+                    <div class="facebook_ico">
+                        <a href = "https://www.facebook.com/TheKiwiCartoon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                    <!-----------------ICONO DE CARRITO---------------------------->
+                    <div class = "carrito_ico">
+                        <a href = "/Tienda/Carrito.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <div class="texto-principal">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eo</h1>
-            </div>
         </header>
-        <!------------------------------------------------------->
-        <section class="section margen-interno">
+        <!----------------------PORTADA----------------------------->
+        <div class = "portada">
+            <img src = "/Imagenes/port.png">
+        </div>
+        <!------------------------------------------------------------------------------------------------------->
+        <section class="section margen-interno">     
             <div class="articulos">
-                <article class="article">
-                    <img src="https://picsum.photos/500/220">
-                    <h3>23 de marzo del 2022</h3>
-                    <h2>Titulo de noticias</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam nulla tempora eius, consequuntur sed voluptates aut quis voluptatem sit ducimus labore hic rerum doloremque molestiae non perspiciatis alias ut consequatur.</p>
-                </article>
-                <article class="article">
-                    <img src="https://picsum.photos/500/220">
-                    <h3>23 de marzo del 2022</h3>
-                    <h2>Titulo de noticias</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam nulla tempora eius, consequuntur sed voluptates aut quis voluptatem sit ducimus labore hic rerum doloremque molestiae non perspiciatis alias ut consequatur.</p>
-                </article>
-                <article class="article">
-                    <img src="https://picsum.photos/500/220">
-                    <h3>23 de marzo del 2022</h3>
-                    <h2>Titulo de noticias</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam nulla tempora eius, consequuntur sed voluptates aut quis voluptatem sit ducimus labore hic rerum doloremque molestiae non perspiciatis alias ut consequatur.</p>
-                </article>
-                <article class="article">
-                    <img src="https://picsum.photos/500/220">
-                    <h3>23 de marzo del 2022</h3>
-                    <h2>Titulo de noticias</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam nulla tempora eius, consequuntur sed voluptates aut quis voluptatem sit ducimus labore hic rerum doloremque molestiae non perspiciatis alias ut consequatur.</p>
-                </article>
-                <nav class="navegacion">
-                    <a href="#">Inicio</a>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">Final</a>
-                </nav>
-            </div>
-
-
-            
+                <!-----------------------ARTICULO DEL BOBBLEHEAD-------------------------------->
+                <div class="article bobblehead">
+                    <div class = "imagen">
+                        <img src="/Imagenes/bub.PNG" alt="">
+                    </div>
+                    <div class = "informacion">
+                        <h1>Apéciate como nunca lo haz hecho, inmotalizate en un Bobblehead. Puedes construirlo facil y rápido.</h1>
+                        <h2>100% Personalizables</h2>
+                        <button class="btn signin">Hacer mi Bobblehead</button>
+                    </div>
+                </div>
+                <!------------------------------------------------------->
+                <div class="article cartoons">
+                    <div class = "imagen">
+                        <img src="/Imagenes/cartoon.jpg" alt="">
+                    </div>
+                    <div class = "informacion">
+                        <h1>"Tomate la vida con más humor es el secreto para vivir más feliz."</h1>
+                        <p>Nuestras caricaturas no emplean uso de tecnoclogía para su creación. Tenemos diseños a color y a blanco y negro. Solo necesitas enviarnos tu fotografías.<br></p>
+                        <p>Te sorprenderá lo fácil que es crear una.</p>
+                        <button class = "btn signin">Hacer mi Cartoon</button>
+                    </div>
+                </div>
+                <!------------------------------------------------------->
+                <div class="article pasteles">
+                    <div class = "imagen">
+                        <img src="/Imagenes/pastel.jpg" alt="">
+                    </div>
+                    <div class = "informacion">
+                        <h1>El pastel es un símbolo para celebrar la vida. Alegrale el día a esa persona especil con unos de nuestros expectaculares pasteles de fondant.</h1>
+                        <button class = "btn signin">Hacer mi Pastel</button>
+                    </div>
+                </div>
+                <!------------------------------------------------------->
+                <div class="empresa">
+                   
+                        <img src="/Imagenes/studio.PNG">
+                    <!--
+                    <div class = "informacion">
+                        <h2>"Nuestro arte da vida"</h2>
+                        <h1>Quieres saber más de nuestra empresa. Visitanos y mira el proceso de creación de nuestros bobblehead y muchso más.</h1>
+                        
+                        <button>Visitar</button>
+                    </div>-->
+                </div>
+                <!------------------------------------------------------->
+                
+            </div>          
         </section>
         <!------------------------------------------------------->
         <footer class="footer margen-interno">
-            <nav class="pie">
-                <p>Desarrollado por Oscar Almendariz</p>
-            </nav>
+            <div>
+                <p>INFORMACIÓN</p>
+                <a href = "">Politicas de reenvío y devolución</a>
+                <a href = "">Términos de servicio</a>
+                <a href = ""></a>
+            </div>
+            <div>
+                <p>SOBRE NOSOTROS</p>
+                <a href="">Nuestra empresa</a>
+            </div>
+            <div>
+                <P>NO TE LO PIERDAS</P>
+                <P>Suscribete a nuestras últimas noticias y ofertas.</P>
+                <button>Resgistrarme</button>
+                <img src="" alt="">
+            </div>
         </footer>
         <!------------------------------------------------------->
 

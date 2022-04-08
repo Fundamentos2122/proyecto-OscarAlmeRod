@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+  --bg-grey: #F6F9FC;
+  --color-hover: #fe696a;
+  --link-hover: #A598A5;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+/************************cabecera***************************************************************/
+.hover:hover{
+  color: var(--color-hover);
+  transition: 500ms all;
+  cursor: pointer;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-grey);
+  padding: 10px 9% 10px;
+}
+
+header .links > a:first-child, a > i{
+  padding-right: 4px;
+}
+
+header .links > a:nth-child(2){
+  color: var(--link-hover);
+  pointer-events: none;
+}
+
+select{
+  outline: none;
+  border: none;
+  
+}
+
+header > div{
+  font-size: 13px;
+}
+
+/************************************Barsid***********************************************/
+
+.barside{
+  position: fixed;
+  background-color: white;
+  height: 100%;
+  padding: 15px
+}
+  .barside > .area {
+    background-color: rgba(255, 166, 0, 0.826);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+/************************************Contendr**********************************************/
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+}
+  .contenedor > .contenedor-interno{
+    flex: 3 1 auto;
+    width:  80%;
+    color: black;    
+  }
+  .contenedor > .barside{
+    flex: 2 1 auto;
+    width: 20%;
+    border-right: 2px solid orange;
+  }
+
+
+/*********************Responsividad**************************/
+@media only screen and (max-width: 1286px){
+  .container, header{
+    padding: 10px 2% 10px;
+  }
+}
+
+@media only screen and (max-width: 769px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  nav > div:nth-child(3){
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 536px){
+  .grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+
+
+
+
+
+
+

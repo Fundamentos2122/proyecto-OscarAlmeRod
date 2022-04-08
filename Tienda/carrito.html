@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras</title>
+  <link rel="stylesheet" href="./estilo.css">
+  <script src="https://kit.fontawesome.com/b69803b7ea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-------------------CABECERA------------------------------------------------------------------------------------------------------------>
+  <header>
+    <img src="/Imagenes/huevo.png" width="200px">
+    <h1>Mi Carrito de compras</h1>
+    <div>
+      <div>
+        <a href="../index.html" class="links hover">
+          <i class="fas fa-home"></i>The Kiwi Cartoons
+        </a>
+        > Mi carrito
+      </div>
+    </div>
+  </header>
+
+  <!-------------------CONTEND------------------------------------------------------------------------------------------------------------>
+  <div class="carrito">
+    <!---------------------------------Cabecera------------------------------------->
+    <div class="cabecera fila con-linea">
+      <div class = "titulo">Artículos</div>
+      <select>
+        <option> Selecciona la categoría del artículo</option>
+        <option>Bobbleheads</option>
+        <option>Cartoons</option>
+        <option>Pasteles</option>
+      </select>
+    </div>
+    <!---------------------------------Lista de productos--------------------------->
+    <div class="lista-productos con-linea">
+      <!---------------------------------Productos-------------------------------------->
+      <div class="producto fila">
+        <div class = "proyecto"><a href="">Sobrino Liam Besibolista</a></div>
+        <div class = "costo">$1200</div>
+        <div ><button class = "eliminar">X</button></div>
+      </div>
+      <!---------------------------------Productos-------------------------------------->
+      <div class="producto fila">
+        <div class = "proyecto"><a href="">Bailarina de folklor</a></div>
+        <div class = "costo">$1200</div>
+        <div><button class = "eliminar">X</button></div>
+      </div>
+    </div>
+    <!---------------------------------Total----------------------------------------->
+    <div class="total fila">
+      <div class = "texto">Total</div>
+      <div class = "valor">$2500</div>
+    </div>
+    <!---------------------------------Aviso----------------------------------------->
+    <div class="aviso fila">
+      <div class = "icono"><i class="fa-solid fa-circle-info"></i></div>
+      <div class = "aviso">Para editar el diseño de sus productos presiona el nombre del proyecto y te abrirá la hoja de caracterización
+      </div>
+    </div>
+    <!------------------------------Tiempos de entrega------------------------------->
+    <div class="tiempo-de-entrega fila">
+      <div class="texto">Tiempo de entrega</div>
+      <div class="valor">10 a 15 días</div>
+    </div>
+    <!---------------------------------Controles--------------------------->
+    <div class="controles fila">
+      <button><img src="" alt=""> Comprar</button>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>

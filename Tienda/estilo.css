@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+  --bg-grey: #F6F9FC;
+  --color-hover: #fe696a;
+  --link-hover: #A598A5;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.hover:hover{
+  color: var(--color-hover);
+  transition: 500ms all;
+  cursor: pointer;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-grey);
+  padding: 10px 9% 10px;
+}
+
+header .links > a:first-child, a > i{
+  padding-right: 4px;
+}
+
+header .links > a:nth-child(2){
+  color: var(--link-hover);
+  pointer-events: none;
+}
+
+select{
+  outline: none;
+  border: none;
+  
+}
+
+.container{
+  padding: 20px 9%;
+}
+
+header > div{
+  font-size: 13px;
+}
+/************************************Contendr**********************************************/
+.carrito{
+  margin-top: 15px;
+  margin-right: 15%;
+  margin-left: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+  .carrito > .fila {
+    display: flex;
+    flex-direction: row;
+  }
+  .carrito > .con-linea{
+    border-bottom: 2px solid orange;
+  }
+  .carrito > div{
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+  }
+
+  /*******************CABECERA******************************/
+  .cabecera{
+    padding-bottom: 10px;
+  }
+  .carrito > .cabecera > .titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  .carrito > .cabecera > select {
+    font-size: 20px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+/*************************Lista de productos**********************/
+.carrito > .lista-productos{
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.carrito > .lista-productos > .producto{
+  display:flex;
+  font-size: 15px;
+}
+.carrito > .lista-productos > .producto > .proyecto a{
+  color: blue;
+  
+}
+.carrito > .lista-productos > .producto > .proyecto{
+  color: blue;
+  flex: 3 1 auto;
+  width: 80%;
+}
+.carrito > .lista-productos > .producto > .costo{
+  
+  flex: 1 1 auto;
+}
+.carrito > .lista-productos > .producto >button{
+  
+  flex: 1 1 auto;
+}
+/*************************Total**********************/
+.total{
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.total > div{
+  font-weight: bold;
+  font-size: 18px;
+}
+.total > .texto{
+  width: 60%;
+  flex: 7 1 auto;
+}
+.total > .valor{
+  flex: 1 1 auto;
+}
+/*************************Aviso**********************/
+.aviso{
+  margin-bottom: 10px;
+}
+.aviso > .icono{
+  margin-right: 10px;
+}
+/*************************Tiempo**********************/
+.tiempo-de-entrega{
+  margin-bottom: 30px;
+}
+.tiempo-de-entrega > .texto{
+  color: green;
+  font-weight: bold;
+  flex: 7 1 auto;
+  width: 70%;
+}
+.tiempo-de-entrega > .valor{
+  color: green;
+  font-weight: bold;
+  flex: 1 1 auto;
+}
+
+/****************Controles*******************************/
+.controles {
+  display: flex;
+  justify-content: flex-end;
+}
+.controles > button{
+  font-size: 25px;
+  
+  border-radius: 10px;
+  background-color: greenyellow;
+  width: 300px;
+  height: 50px;
+}
+
+
+
+/*********************Responsividad**************************/
+@media only screen and (max-width: 1286px){
+  .container, header{
+    padding: 10px 2% 10px;
+  }
+}
+
+@media only screen and (max-width: 769px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  nav > div:nth-child(3){
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 536px){
+  .grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
